@@ -24,6 +24,9 @@ jobs:
         with:
           channel: 'stable'
 
+      - name: Ensure Android v2 embedding files
+        run: flutter create --platforms=android --org com.aistudio.diamondrewards.kxmvpz .
+
       - name: Install dependencies
         run: flutter pub get
 
